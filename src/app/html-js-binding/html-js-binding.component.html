@@ -1,0 +1,10 @@
+<p>html-js-binding works!</p>
+<label >FirstName</label>
+<input #fname type="text" placeholder="firstname" >
+<br>
+<label >LastName</label>
+<input #lname type="text" placeholder="lastname">
+<br>
+<button (click)="getData(fname,lname)">GetData</button>
+{{fullname}}
+<button (click)="toggle()">{{bValue}}</button>

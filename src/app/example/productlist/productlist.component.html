@@ -1,0 +1,16 @@
+<p>productlist List!</p>
+<table>
+    <thead>
+    <tr>
+        <th class="id">Id</th>
+        <th class="name">Name</th>
+        <th class="description">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of productlist">
+            <app-product [products]='product'></app-product>
+        </tr>
+    </tbody>
+
+</table>

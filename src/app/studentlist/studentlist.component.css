@@ -1,0 +1,23 @@
+th,tr,td{
+    border:1px solid black;
+    padding-right: 125px;
+    text-align: center;
+    padding-top: 5px;
+}
+th{
+    background-color: blueviolet;
+}
+tr{
+    background-color: aqua;
+}
+table{
+    width: 500px;
+    border-collapse: collapse;
+    margin:auto;
+}
+tr:nth-child(even){
+    background-color:white;
+}
+tr:hover{
+    background-color: aquamarine;
+}

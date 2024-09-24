@@ -1,0 +1,47 @@
+<button (click)="showText()">{{show?'hide':'show'}}</button>
+<div *ngIf="show">
+    <div class="heading">
+        <table>
+        <thead>
+            <div>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>mobile</td>
+                    <td>12900</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>mobile1</td>
+                    <td>12999</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>mobile3</td>
+                    <td>12948</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>mobile4</td>
+                    <td>11900</td>
+                </tr>
+            </div>
+        </thead>
+    </table>
+    </div>
+    {{func()}}
+    <hr>
+    <br>
+    <input type="text" disabled="{{isDisabled}}" value="{{name}}">
+    <hr>
+    <br>
+    <input type="text" [disabled]="isDisabled" [value]="name">
+    <hr>
+    <br>
+</div>
+ 
+
